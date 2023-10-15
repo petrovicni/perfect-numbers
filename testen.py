@@ -24,4 +24,4 @@ def test(x: int):
                     r -= 1
                     continue
 
-test(28)
+test(28) # zahl ersetzen und überprüfen ob komplett
