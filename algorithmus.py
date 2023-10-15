@@ -22,5 +22,10 @@ def komplettezahl(x: int):
                     r -= 1
                     continue
 
-for i in range(10000000000000000000):
-    komplettezahl(i)
+def main():
+    i = 0
+    while True:
+        komplettezahl(i)
+        i += 1
+
+main()
