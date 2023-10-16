@@ -8,8 +8,7 @@ def komplettezahl(x: int):
 
             if int(r) == 0:
                 if a == x:
-                    with open("works.txt", "a+") as f:
-                        f.write(f"{x}\n")
+                    print(x)
                     break
                 else:
                     break
