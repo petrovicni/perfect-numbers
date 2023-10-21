@@ -1,7 +1,7 @@
 # fastest i could come up with using python
 from concurrent.futures import ThreadPoolExecutor
 
-biggest = 100**2149  # biggest number python can calculate with
+biggest = 100**2149  # biggest number python can print out
 threads = 500        # max checks at once your pc can handle
 
 def perfectnum(number: int):
