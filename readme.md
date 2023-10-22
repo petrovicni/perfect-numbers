@@ -10,4 +10,4 @@ Definition used from [Wikipedia](https://en.wikipedia.org/wiki/Perfect_number)
 | Number | 6   | 28   | 496 | 8128 | 33550336 |
 
 #
-I created this in computer science class, since my teacher challenged me to find the second perfect number and only told me how and why the 6 was one.
+I created this in computer science class, since my teacher challenged me to find the second perfect number and only told me how and why the 6 was one. I got interested in the topic and found out that there is about 51 known perfect numbers, the last one being 50m digits long and discovered in 2018.
