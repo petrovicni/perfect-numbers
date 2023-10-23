@@ -1,5 +1,6 @@
 # i am saving the process to a txt file, so everything can be proven and all steps checked
 def checkPerfectNumber(number: int):
+    open("process.txt", "a+").write(f"number: {number}\n")
     if number % 2: # checks if the number is even or odd, since perfect numbers cant be odd
         open("process.txt", "a+").write("perfect number can not be odd")
         return False
