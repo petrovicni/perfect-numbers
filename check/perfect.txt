@@ -1,3 +1,4 @@
+number: 28
 number 28 halved, since everything above the half would not be an integer
 28 : 14 = 2 | holder variable appended: 14 | current value: 14
 28 : 13 = 2.15 | result is not an integer
