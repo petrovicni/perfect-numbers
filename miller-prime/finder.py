@@ -1,4 +1,4 @@
-# check explanation at readme.md, where i explain logic and perfectNumber function
+# explanation in readme.md, where i logic and perfectNumber function is clarified 
 import random
 
 def power(x, y, p):
