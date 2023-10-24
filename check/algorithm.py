@@ -1,4 +1,5 @@
-# i am saving the process to a txt file, so everything can be proven and all steps checked
+# this is similar to my first algorithm and it's purpose is to prove a number perfect or imperfect showing all steps and being 100% accurate
+# this is also why i am saving the process to a txt file
 def checkPerfectNumber(number: int):
     open("process.txt", "a+").write(f"number: {number}\n")
     if number % 2: # checks if the number is even or odd, since perfect numbers cant be odd
