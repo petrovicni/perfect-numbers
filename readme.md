@@ -33,7 +33,7 @@ Here is an example:
 
 ```py
 n = 3
-m = n//2 = 1
+m = 3//2 = 1
 
 a = 3-1 = 2          # is prime
 b = (2**2)-(1%2) = 3 # is prime
@@ -47,7 +47,7 @@ The calculation works if both conditions are met, but actually the second condit
 
 ```py
 n = 21
-m = n//2 = 10
+m = 21//2 = 10
 
 a = 21-10 = 11            # is prime
 b = (2**11)-(1%11) = 2047 # is not prime
