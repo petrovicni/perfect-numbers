@@ -18,25 +18,25 @@ I first found out about this pattern in computer science class, when my teacher 
 These are the final results of my calculations:
 
 ```py
-n = 3 # can be any odd number
-m = int(n*0.5)
+n = 3 # any odd number
+m = n//2
 r = (2**n)-(2**m)
 ```
 Result (r) can only be perfect under two conditions:
 
 ```py
-c1 = n-m        # result must be prime
-c2 = 2**(n-m)-1 # result must be prime
+a = n-m          # result must be prime
+b = (2**a)-(1%a) # result must be prime
 ```
 
 Here is an example:
 
 ```py
 n = 3
-m = int(n*0.5) = 1
+m = n//2 = 1
 
-c1 = 3-1 = 2      # is prime
-c2 = (2**3)-1 = 7 # is prime
+a = 3-1 = 2          # is prime
+b = (2**2)-(1%2) = 3 # is prime
 
 r = (2**3)-(2**1) = 6
 ```
@@ -47,10 +47,10 @@ The calculation works if both conditions are met, but actually the second condit
 
 ```py
 n = 21
-m = int(n*0.5) = 10
+m = n//2 = 10
 
-c1 = 21-10 = 11       # is prime
-c2 = (2**11)-1 = 2047 # is not prime
+a = 21-10 = 11            # is prime
+b = (2**11)-(1%11) = 2047 # is not prime
 ```
 
 Since 2047 is not a prime number, the result won't be a perfect number.
@@ -65,17 +65,19 @@ def ifPrime():
     return True # or False
 
 def perfectNumber(n):
-    m = int(n * 0.5)
-    if isPrime(n-m) and isPrime(2**(n-m) - 1): # checks both conditions
-        result = (2**n) - (2**m)
-        return True, result
+    m = n//2
+    a = n-m
+    b = (2**a)-(1%a)
+    if isPrime(a) and isPrime(b): # checks both conditions
+        r = (2**n)-(2**m)
+        return True, r
     else:
         return False
 
 i = 3 # starts with 3 since, as mentioned earlier, this gives you the first perfect number (6)
 while True:
-    result = perfectNumber(i)
-    if result:
+    r = perfectNumber(i)
+    if r:
         print(result)
     i += 2 # always adds 2, so the numbers stay odd
 ```
