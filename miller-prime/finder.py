@@ -39,9 +39,11 @@ def isPrime(n):
     return True
 
 def perfectNumber(n):
-    m = int(n * 0.5)
-    if isPrime(n-m) and isPrime(2**(n-m) - 1):
-        r = (2**n) - (2**m)
+    m = n//2
+    a = n-m
+    b = (2**a)-(1%a)
+    if isPrime(a) and isPrime(b):
+        r = (2**n)-(2**m)
         return True, r
     else:
         return False
@@ -51,8 +53,8 @@ if __name__ == "__main__":
     i = 3
     open("perfects.txt", "w")
     while True:
-        result = perfectNumber(i)
-        if result:
-            print(result)
-            open("perfects.txt", "a+").write(f"{result[1]}\n")
+        r = perfectNumber(i)
+        if r:
+            print(r)
+            open("perfects.txt", "a+").write(f"{r[1]}\n")
         i += 2
