@@ -1,3 +1,4 @@
+# theaoretically, you should make it print only the mandatory steps, to save space and time (this is for demo purposes)
 # this is similar to my first algorithm and it's purpose is to prove a number perfect or imperfect showing all steps and being 100% accurate
 # this is also why i am saving the process to a txt file
 def checkPerfectNumber(number: int):
