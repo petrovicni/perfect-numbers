@@ -76,9 +76,9 @@ def perfectNumber(n):
 
 i = 3 # starts with 3 since, as mentioned earlier, this gives you the first perfect number (6)
 while True:
-    r = perfectNumber(i)
-    if r:
-        print(result)
+    c, r = perfectNumber(i)
+    if c:
+        print(r)
     i += 2 # always adds 2, so the numbers stay odd
 ```
 
